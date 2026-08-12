@@ -12,24 +12,131 @@
     --rose-50: hsl(330, 100%, 98%);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--stone-100);
     font-family: 'Outfit', sans-serif;
     color: var(--stone-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
 }
 
 h1 {
     font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
     color: var(--stone-900);
+    margin-block-end: 0;
 }
 
 h2 {
     font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    color: var(--brown-800);
+    margin-block-end: 0;
+}
+
+h3 {
+    font-weight: 700;
     color: var(--rose-800);
 }
 
+p {
+    margin: 1rem 0 2rem;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--stone-150);
+    margin: 1.5rem 0;
+}
+
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-inline-start: 1.5rem;
+}
+
+li {
+    padding-inline-start: 2rem;
+}
+
+li::marker {
+    color: var(--brown-800);
+}
+
+ol li::marker {
+    font-weight: 700;
+}
+
+.card {
+    width: min(100%, 48rem);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 3rem;
+    margin: 6rem;
+    border-radius: 1.5rem;
+}
+
 .child-card {
+    width: 100%;
     background-color: var(--rose-50);
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+}
+
+.child-card li::marker {
+    color: var(--rose-800);
+}
+
+.nutrition-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-list tr {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition-list tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition-list td {
+    padding: 1rem 1.5rem;
+}
+
+.nutrition-list td:first-child {
+    color: var(--stone-600);
+}
+
+.nutrition-list td:last-child {
+    color: var(--brown-800);
+    font-weight: 700;
 }
 
 .attribution {
