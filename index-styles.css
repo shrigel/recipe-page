@@ -147,7 +147,7 @@ ol li::marker {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     body {
         background-color: var(--stone-900);
     }
