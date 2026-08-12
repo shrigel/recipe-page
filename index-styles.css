@@ -12,6 +12,26 @@
     --rose-50: hsl(330, 100%, 98%);
 }
 
+body {
+    background-color: var(--stone-100);
+    font-family: 'Outfit', sans-serif;
+    color: var(--stone-900);
+}
+
+h1 {
+    font-family: 'Young Serif', sans-serif;
+    color: var(--stone-900);
+}
+
+h2 {
+    font-family: 'Young Serif', sans-serif;
+    color: var(--rose-800);
+}
+
+.child-card {
+    background-color: var(--rose-50);
+}
+
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
