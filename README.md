@@ -15,7 +15,11 @@ This is my solution to the **Recipe Page** challenge on Frontend Mentor. The obj
 
 - Semantic HTML5
 - CSS3
+- Flexbox
+- CSS Custom Properties
+- Responsive Design
 - Google Fonts (Young Serif & Outfit)
+- Media Queries
 
 ## Layout
 
